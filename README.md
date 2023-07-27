@@ -14,17 +14,29 @@ Download [here](https://www.ffmpeg.org/).
 After downloading the YTDL program, move the file to your desired drive.
 
 1. Open Command Prompt.
-2. Enter the drive name where YTDL is located and hit Enter
+2. Type `(Drive Letter):` where YTDL is located and hit Enter
    
      <sub>Ex. YTDL is located on the C drive. Type `C:`</sub>
    
-3. If you placed YTDL in a folder on the drive, enter `cd (Folder Name)` and hit Enter
+3. If you placed YTDL in a folder on the drive, type `cd (Folder Name)` and hit Enter
 
     <sub>Ex.  YTDL is located in a folder called YTDL which is in the C drive. Type `cd YTDL`</sub>
 
 
-
 ## Downloading Videos
+### Single Video
+
+### Partial Download
+
+### Playlist
 
 
 ## Downloading Audio
+### Single Audio
+
+### Partial Audio
+
+### Playlist
+
+
+## Converting File Formats
