@@ -24,10 +24,10 @@ After downloading the YTDL program, move the file to your desired drive.
 ## Downloading Videos
 YTDL will automatically attempt to download the best quality video available if no file extension strings are specified.
 You can choose the format of the video file with the string `-f bestvideo[ext=(Video File Extension)]`.
-Available video file extensions include `3gp, flv, mp4, webm`. FFmpeg allows for additional file extensions.
+Available video file extensions include `.3gp`, `.flv`, `.mp4`, and `.webm`. FFmpeg allows for additional file extensions.
 
 ### Single Video
-To download a single video, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/edit/main/README.md#getting-started) step.
+To download a single video, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#getting-started) step.
 | String | Function |
 |--------|----------|
 |`youtube-dl.exe`| Enables Youtube-dl.|
@@ -43,7 +43,7 @@ To download a single video, use the following strings in Command Prompt after fo
 
 
 ### Partial Download
-**NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/edit/main/README.md#overview).
+**NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#overview).
 
 You can download a specific portion of a video with additional file format strings.
 | String | Function |
@@ -84,10 +84,10 @@ You can download a YouTube playlist with additional file format strings.
 ## Downloading Audio
 YTDL will automatically attempt to download the best quality audio available if no file extension strings are specified.
 You can choose the format of the audio file with the string `-f bestaudio[ext=(Audio File Extension)]`.
-Available audio file extensions include ` aac, flv, m4a, mp3, ogg, wav`. FFmpeg allows for additional file extensions.
+Available audio file extensions include  `.aac`, `.m4a`, `.mp3`, `.ogg`, and `.wav`. FFmpeg allows for additional file extensions.
 
 ### Single Audio
-To download a single audio, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/edit/main/README.md#getting-started) step.
+To download a single audio, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#getting-started) step.
 | String | Function |
 |--------|----------|
 |`youtube-dl.exe`| Enables Youtube-dl.|
@@ -102,7 +102,7 @@ To download a single audio, use the following strings in Command Prompt after fo
 
 
 ### Partial Audio
-**NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/edit/main/README.md#overview).
+**NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#overview).
 
 You can download a specific portion of an audio with additional file format strings.
 | String | Function |
