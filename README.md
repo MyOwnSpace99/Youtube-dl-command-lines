@@ -36,10 +36,10 @@ To download a single video, use the following strings in Command Prompt after fo
 |`(YouTube Video URL)`| The link to the YouTube video.|
 
 
-Example template:
+*Example template:*
 
 
-Type `youtube-dl.exe -f bestvideo[ext=(Video File Extension)] (YouTube Video URL)` and hit Enter.
+4. Type `youtube-dl.exe -f bestvideo[ext=(Video File Extension)] (YouTube Video URL)` and hit Enter.
 
 
 ### Partial Download
@@ -58,10 +58,10 @@ You can download a specific portion of a video with additional file format strin
 |`(YouTube Video URL)`| The link to the YouTube video.|
 
 
-Example template:
+*Example template:*
 
 
-Type `yt-dlp -f "bestvideo[ext=(Video File Extension)]" --external-downloader ffmpeg --external-downloader-args "ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00" "(YouTube URL)"` and hit Enter.
+4. Type `yt-dlp -f "bestvideo[ext=(Video File Extension)]" --external-downloader ffmpeg --external-downloader-args "ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00" "(YouTube URL)"` and hit Enter.
 
 
 ### Playlist
@@ -75,10 +75,10 @@ You can download a YouTube playlist with additional file format strings.
 |`(YouTube Playlist URL)`| The link to the YouTube playlist.|
 
 
-Example template:
+*Example template:*
 
 
-Type `youtube-dl.exe -f bestvideo[ext=(Video File Extension)] --playlist-start (Video's Number in Playlist) (YouTube Playlist URL)` and hit Enter.
+4. Type `youtube-dl.exe -f bestvideo[ext=(Video File Extension)] --playlist-start (Video's Number in Playlist) (YouTube Playlist URL)` and hit Enter.
 
 
 ## Downloading Audio
@@ -95,10 +95,10 @@ To download a single audio, use the following strings in Command Prompt after fo
 |`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the video file extension.|
 |`(YouTube Video URL)`| The link to the YouTube video.|
 
-Example template:
+*Example template:*
 
 
-Type `youtube-dl.exe -f bestaudio[ext=(Audio File Extension)] (YouTube Video URL)` and hit Enter.
+4. Type `youtube-dl.exe -f bestaudio[ext=(Audio File Extension)] (YouTube Video URL)` and hit Enter.
 
 
 ### Partial Audio
@@ -117,10 +117,10 @@ You can download a specific portion of an audio with additional file format stri
 |`(YouTube Video URL)`| The link to the YouTube video.|
 
 
-Example template:
+*Example template:*
 
 
-Type `yt-dlp -f "bestaudio[ext=(Audio File Extension)]" --external-downloader ffmpeg --external-downloader-args "ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00" "(YouTube URL)"` and hit Enter.
+4. Type `yt-dlp -f "bestaudio[ext=(Audio File Extension)]" --external-downloader ffmpeg --external-downloader-args "ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00" "(YouTube URL)"` and hit Enter.
 
 
 ### Playlist
@@ -134,11 +134,8 @@ You can download a YouTube playlist with additional file format strings.
 |`(YouTube Playlist URL)`| The link to the YouTube playlist.|
 
 
-Example template:
+*Example template:*
 
 
-Type `youtube-dl.exe -f bestaudio[ext=(Audio File Extension)] --playlist-start (Video's Number in Playlist) (YouTube Playlist URL)` and hit Enter.
+4. Type `youtube-dl.exe -f bestaudio[ext=(Audio File Extension)] --playlist-start (Video's Number in Playlist) (YouTube Playlist URL)` and hit Enter.
 
-
-
-## Converting File Formats
