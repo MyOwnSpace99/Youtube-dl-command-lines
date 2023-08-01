@@ -139,3 +139,5 @@ You can download a YouTube playlist with additional file format strings.
 
 4. Type `youtube-dl.exe -f bestaudio[ext=(Audio File Extension)] --playlist-start (Video's Number in Playlist) (YouTube Playlist URL)` and hit Enter.
 
+## Result
+Downloaded video and audio files are located in the same drive/folder where you placed youtube-dl.exe/yt-dlp.exe.
