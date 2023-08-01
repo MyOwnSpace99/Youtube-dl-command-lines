@@ -28,12 +28,12 @@ Available video file extensions include `.3gp`, `.flv`, `.mp4`, and `.webm`. FFm
 
 ### Single Video
 To download a single video, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#getting-started) step.
-| String | Function |
-|--------|----------|
-|`youtube-dl.exe`| Enables Youtube-dl.|
-|`-f`| Allows file format strings to alter the video file.|
-|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.|
-|`(YouTube Video URL)`| The link to the YouTube video.|
+| String | Function | Type |
+|--------|----------|------|
+|`youtube-dl.exe`| Enables Youtube-dl.| Required |
+|`-f`| Allows file format strings to alter the video file.| Optional |
+|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.| Optional |
+|`(YouTube Video URL)`| The link to the YouTube video.| Required |
 
 
 *Example template:*
@@ -46,16 +46,16 @@ To download a single video, use the following strings in Command Prompt after fo
 **NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#overview).
 
 You can download a specific portion of a video with additional file format strings.
-| String | Function |
-|--------|----------|
-|`yt-dlp`| Enables YT-DLP.|
-|`-f`| Allows file format strings to alter the video file.|
-|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.|
-|`--external-downloader ffmpeg`| Enables FFmpeg.|
-|`--external-downloader-args`| Enables following argument strings to the external downloader.|
-|`"ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00"`| Specifies the portion of the video to be downloaded where `-ss 00:00:00.00` is the time to start the download and `-to 00:00:00.00` is the time to end the download.|
-|`"ffmpeg_i:-ss 00:00:00.00 -t (Time in Seconds)"`| Specifies the portion of the video to be downloaded where `-ss 00:00:00.00` is the time to start the download and`-t (Time in Seconds)` is the duration of the download in seconds.|
-|`(YouTube Video URL)`| The link to the YouTube video.|
+| String | Function | Type |
+|--------|----------|------|
+|`yt-dlp`| Enables YT-DLP.| Required |
+|`-f`| Allows file format strings to alter the video file.| Optional |
+|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.| Optional |
+|`--external-downloader ffmpeg`| Enables FFmpeg.| Required |
+|`--external-downloader-args`| Enables following argument strings to the external downloader.| Required |
+|`"ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00"`| Specifies the portion of the video to be downloaded where `-ss 00:00:00.00` is the time to start the download and `-to 00:00:00.00` is the time to end the download.| Required, options available |
+|`"ffmpeg_i:-ss 00:00:00.00 -t (Time in Seconds)"`| Specifies the portion of the video to be downloaded where `-ss 00:00:00.00` is the time to start the download and`-t (Time in Seconds)` is the duration of the download in seconds.| Required, options available |
+|`(YouTube Video URL)`| The link to the YouTube video.| Required |
 
 
 *Example template:*
@@ -66,13 +66,13 @@ You can download a specific portion of a video with additional file format strin
 
 ### Playlist
 You can download a YouTube playlist with additional file format strings.
-| String | Function |
-|--------|----------|
-|`youtube-dl.exe`| Enables Youtube-dl.|
-|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.|
-|`--playlist`| Specifies that a playlist is to be downloaded.|
-|`-start (Video's Number in Playlist)`| Specifies at which video to start downloading the playlist where `(Video's Number in Playlist)` is the video's position in the playlist. *Ex. Second video is 2, third video is 3, etc.*|
-|`(YouTube Playlist URL)`| The link to the YouTube playlist.|
+| String | Function | Type |
+|--------|----------|------|
+|`youtube-dl.exe`| Enables Youtube-dl.| Required |
+|`"bestvideo[ext=(Video File Extension)]"`| Allows you to specify the video file extension.| Optional |
+|`--playlist`| Specifies that a playlist is to be downloaded.| Required |
+|`-start (Video's Number in Playlist)`| Specifies at which video to start downloading the playlist where `(Video's Number in Playlist)` is the video's position in the playlist. *Ex. Second video is 2, third video is 3, etc.*| Optional |
+|`(YouTube Playlist URL)`| The link to the YouTube playlist.| Required |
 
 
 *Example template:*
@@ -88,12 +88,12 @@ Available audio file extensions include  `.aac`, `.m4a`, `.mp3`, `.ogg`, and `.w
 
 ### Single Audio
 To download a single audio, use the following strings in Command Prompt after following the [Getting Started](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#getting-started) step.
-| String | Function |
-|--------|----------|
-|`youtube-dl.exe`| Enables Youtube-dl.|
-|`-f`| Allows file format strings to alter the video file.|
-|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the video file extension.|
-|`(YouTube Video URL)`| The link to the YouTube video.|
+| String | Function | Type |
+|--------|----------|------|
+|`youtube-dl.exe`| Enables Youtube-dl.| Required |
+|`-f`| Allows file format strings to alter the video file.| Optional |
+|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the video file extension.| Optional |
+|`(YouTube Video URL)`| The link to the YouTube video.| Required |
 
 *Example template:*
 
@@ -105,16 +105,16 @@ To download a single audio, use the following strings in Command Prompt after fo
 **NOTE**: Partially downloading a YouTube video or audio requires YT-DLP, a Youtube-dl fork which adds additional functions. Download [here](https://github.com/yt-dlp/yt-dlp). It also requires [FFmpeg](https://github.com/MyOwnSpace99/Youtube-dl-command-lines/tree/main#overview).
 
 You can download a specific portion of an audio with additional file format strings.
-| String | Function |
-|--------|----------|
-|`yt-dlp`| Enables YT-DLP.|
-|`-f`| Allows file format strings to alter the audio file.|
-|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the audio file extension.|
-|`--external-downloader ffmpeg`| Enables FFmpeg.|
-|`--external-downloader-args`| Enables following argument strings to the external downloader.|
-|`"ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00"`| Specifies the portion of the audio to be downloaded where `-ss 00:00:00.00` is the time to start the download and `-to 00:00:00.00` is the time to end the download.|
-|`"ffmpeg_i:-ss 00:00:00.00 -t (Time in Seconds)"`| Specifies the portion of the audio to be downloaded where `-ss 00:00:00.00` is the time to start the download and`-t (Time in Seconds)` is the duration of the download in seconds.|
-|`(YouTube Video URL)`| The link to the YouTube video.|
+| String | Function | Type |
+|--------|----------|------|
+|`yt-dlp`| Enables YT-DLP.| Required |
+|`-f`| Allows file format strings to alter the audio file.| Optional |
+|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the audio file extension.| Optional |
+|`--external-downloader ffmpeg`| Enables FFmpeg.| Required |
+|`--external-downloader-args`| Enables following argument strings to the external downloader.| Required |
+|`"ffmpeg_i:-ss 00:00:00.00 -to 00:00:00.00"`| Specifies the portion of the audio to be downloaded where `-ss 00:00:00.00` is the time to start the download and `-to 00:00:00.00` is the time to end the download.| Required, options available |
+|`"ffmpeg_i:-ss 00:00:00.00 -t (Time in Seconds)"`| Specifies the portion of the audio to be downloaded where `-ss 00:00:00.00` is the time to start the download and`-t (Time in Seconds)` is the duration of the download in seconds.| Required, options available|
+|`(YouTube Video URL)`| The link to the YouTube video.| Required |
 
 
 *Example template:*
@@ -125,13 +125,13 @@ You can download a specific portion of an audio with additional file format stri
 
 ### Playlist
 You can download a YouTube playlist with additional file format strings.
-| String | Function |
-|--------|----------|
-|`youtube-dl.exe`| Enables Youtube-dl.|
-|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the audio file extension.|
-|`--playlist`| Specifies that a playlist is to be downloaded.|
-|`-start (Video's Number in Playlist)`| Specifies at which video to start downloading the playlist where `(Video's Number in Playlist)` is the video's position in the playlist. *Ex. Second video is 2, third video is 3, etc.*|
-|`(YouTube Playlist URL)`| The link to the YouTube playlist.|
+| String | Function | Type |
+|--------|----------|------|
+|`youtube-dl.exe`| Enables Youtube-dl.| Required |
+|`"bestaudio[ext=(Audio File Extension)]"`| Allows you to specify the audio file extension.| Optional |
+|`--playlist`| Specifies that a playlist is to be downloaded.| Required |
+|`-start (Video's Number in Playlist)`| Specifies at which video to start downloading the playlist where `(Video's Number in Playlist)` is the video's position in the playlist. *Ex. Second video is 2, third video is 3, etc.*| Optional |
+|`(YouTube Playlist URL)`| The link to the YouTube playlist.| Required |
 
 
 *Example template:*
